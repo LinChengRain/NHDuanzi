@@ -14,6 +14,8 @@
 		25066A1020AA700000850D28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25066A0E20AA700000850D28 /* LaunchScreen.storyboard */; };
 		25066A1920AA717100850D28 /* memi.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25066A1820AA717100850D28 /* memi.gif */; };
 		42D0F649C4773ADF5276A07D /* Pods_NHDuanzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5105A76D533E15F445D8F4D /* Pods_NHDuanzi.framework */; };
+		7BB5629520AB03F800E17CD0 /* NetworkServiceTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB5629420AB03F800E17CD0 /* NetworkServiceTool.swift */; };
+		7BB5629720AB16D500E17CD0 /* JingxuanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB5629620AB16D500E17CD0 /* JingxuanModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		25066A0F20AA700000850D28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25066A1120AA700000850D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25066A1820AA717100850D28 /* memi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = memi.gif; sourceTree = "<group>"; };
+		7BB5629420AB03F800E17CD0 /* NetworkServiceTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTool.swift; sourceTree = "<group>"; };
+		7BB5629620AB16D500E17CD0 /* JingxuanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JingxuanModel.swift; sourceTree = "<group>"; };
 		A2F49AAB846ACE61626229D2 /* Pods-NHDuanzi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHDuanzi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NHDuanzi/Pods-NHDuanzi.debug.xcconfig"; sourceTree = "<group>"; };
 		B5105A76D533E15F445D8F4D /* Pods_NHDuanzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHDuanzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F199444509187DFFA071C913 /* Pods-NHDuanzi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHDuanzi.release.xcconfig"; path = "Pods/Target Support Files/Pods-NHDuanzi/Pods-NHDuanzi.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,7 +69,9 @@
 			children = (
 				25066A1720AA713C00850D28 /* resource */,
 				25066A0520AA6FFF00850D28 /* AppDelegate.swift */,
+				7BB5629420AB03F800E17CD0 /* NetworkServiceTool.swift */,
 				25066A0720AA6FFF00850D28 /* ViewController.swift */,
+				7BB5629620AB16D500E17CD0 /* JingxuanModel.swift */,
 				25066A0920AA6FFF00850D28 /* Main.storyboard */,
 				25066A0C20AA700000850D28 /* Assets.xcassets */,
 				25066A0E20AA700000850D28 /* LaunchScreen.storyboard */,
@@ -111,7 +117,6 @@
 				250669FF20AA6FFE00850D28 /* Frameworks */,
 				25066A0020AA6FFE00850D28 /* Resources */,
 				6661A6B46D15BB2CAD99833B /* [CP] Embed Pods Frameworks */,
-				43C7771317D4770A79025F1D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,21 +175,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		43C7771317D4770A79025F1D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NHDuanzi/Pods-NHDuanzi-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		61C2F2AFB9DC71C446A7005F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,8 +222,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB5629520AB03F800E17CD0 /* NetworkServiceTool.swift in Sources */,
 				25066A0820AA6FFF00850D28 /* ViewController.swift in Sources */,
 				25066A0620AA6FFF00850D28 /* AppDelegate.swift in Sources */,
+				7BB5629720AB16D500E17CD0 /* JingxuanModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +373,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NHDuanzi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zkkeji.www.NHDuanzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -397,7 +392,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NHDuanzi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zkkeji.www.NHDuanzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

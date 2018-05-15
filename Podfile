@@ -6,7 +6,7 @@ target 'NHDuanzi' do
   use_frameworks!
 
   # Pods for NHDuanzi
-  pod 'Alamofire'
-  pod 'SnapKit' 
-  pod 'AlamofireImage'
+#  pod 'Alamofire'
+#  pod 'SnapKit' 
+#  pod 'AlamofireImage'
 end
