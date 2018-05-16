@@ -13,6 +13,25 @@
 		25066A0D20AA700000850D28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25066A0C20AA700000850D28 /* Assets.xcassets */; };
 		25066A1020AA700000850D28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25066A0E20AA700000850D28 /* LaunchScreen.storyboard */; };
 		25066A1920AA717100850D28 /* memi.gif in Resources */ = {isa = PBXBuildFile; fileRef = 25066A1820AA717100850D28 /* memi.gif */; };
+		25066A2020AA810F00850D28 /* NHHotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A1F20AA810F00850D28 /* NHHotViewController.swift */; };
+		25066A2220AA826900850D28 /* NHNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A2120AA826900850D28 /* NHNewViewController.swift */; };
+		25066A2420AA827100850D28 /* NHMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A2320AA827100850D28 /* NHMoreViewController.swift */; };
+		25066A2820AA82AF00850D28 /* NHTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A2720AA82AF00850D28 /* NHTabBarController.swift */; };
+		25066A2A20AA82CA00850D28 /* NHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A2920AA82CA00850D28 /* NHNavigationController.swift */; };
+		25066A2D20AA85E000850D28 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A2C20AA85E000850D28 /* Header.swift */; };
+		25066A2F20AA8D3100850D28 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A2E20AA8D3100850D28 /* UIColorExtension.swift */; };
+		25066A3120AA8E3F00850D28 /* ServiceApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A3020AA8E3F00850D28 /* ServiceApi.swift */; };
+		25066A3420AAAC7E00850D28 /* JokeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A3320AAAC7E00850D28 /* JokeViewController.swift */; };
+		25066A4020AAB92000850D28 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A3920AAB91F00850D28 /* CAPSPageMenu+UIScrollViewDelegate.swift */; };
+		25066A4120AAB92000850D28 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A3A20AAB92000850D28 /* MenuItemView.swift */; };
+		25066A4220AAB92000850D28 /* CAPSPageMenu+Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A3B20AAB92000850D28 /* CAPSPageMenu+Options.swift */; };
+		25066A4320AAB92000850D28 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A3C20AAB92000850D28 /* CAPSPageMenu.swift */; };
+		25066A4420AAB92000850D28 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A3D20AAB92000850D28 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */; };
+		25066A4520AAB92000850D28 /* CAPSPageMenu+UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A3E20AAB92000850D28 /* CAPSPageMenu+UIConfiguration.swift */; };
+		25066A4620AAB92000850D28 /* CAPSPageMenuConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A3F20AAB92000850D28 /* CAPSPageMenuConfiguration.swift */; };
+		25066A4820AAC24200850D28 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A4720AAC24200850D28 /* VideoViewController.swift */; };
+		25066A4A20AAC25100850D28 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A4920AAC25100850D28 /* PhotoViewController.swift */; };
+		25066A4C20AADDBC00850D28 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A4B20AADDBC00850D28 /* ServiceManager.swift */; };
 		42D0F649C4773ADF5276A07D /* Pods_NHDuanzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5105A76D533E15F445D8F4D /* Pods_NHDuanzi.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +44,25 @@
 		25066A0F20AA700000850D28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25066A1120AA700000850D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25066A1820AA717100850D28 /* memi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = memi.gif; sourceTree = "<group>"; };
+		25066A1F20AA810F00850D28 /* NHHotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHHotViewController.swift; sourceTree = "<group>"; };
+		25066A2120AA826900850D28 /* NHNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHNewViewController.swift; sourceTree = "<group>"; };
+		25066A2320AA827100850D28 /* NHMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHMoreViewController.swift; sourceTree = "<group>"; };
+		25066A2720AA82AF00850D28 /* NHTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHTabBarController.swift; sourceTree = "<group>"; };
+		25066A2920AA82CA00850D28 /* NHNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHNavigationController.swift; sourceTree = "<group>"; };
+		25066A2C20AA85E000850D28 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		25066A2E20AA8D3100850D28 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		25066A3020AA8E3F00850D28 /* ServiceApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceApi.swift; sourceTree = "<group>"; };
+		25066A3320AAAC7E00850D28 /* JokeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewController.swift; sourceTree = "<group>"; };
+		25066A3920AAB91F00850D28 /* CAPSPageMenu+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
+		25066A3A20AAB92000850D28 /* MenuItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		25066A3B20AAB92000850D28 /* CAPSPageMenu+Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+Options.swift"; sourceTree = "<group>"; };
+		25066A3C20AAB92000850D28 /* CAPSPageMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenu.swift; sourceTree = "<group>"; };
+		25066A3D20AAB92000850D28 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
+		25066A3E20AAB92000850D28 /* CAPSPageMenu+UIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CAPSPageMenu+UIConfiguration.swift"; sourceTree = "<group>"; };
+		25066A3F20AAB92000850D28 /* CAPSPageMenuConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenuConfiguration.swift; sourceTree = "<group>"; };
+		25066A4720AAC24200850D28 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		25066A4920AAC25100850D28 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		25066A4B20AADDBC00850D28 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		A2F49AAB846ACE61626229D2 /* Pods-NHDuanzi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHDuanzi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NHDuanzi/Pods-NHDuanzi.debug.xcconfig"; sourceTree = "<group>"; };
 		B5105A76D533E15F445D8F4D /* Pods_NHDuanzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHDuanzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F199444509187DFFA071C913 /* Pods-NHDuanzi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHDuanzi.release.xcconfig"; path = "Pods/Target Support Files/Pods-NHDuanzi/Pods-NHDuanzi.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +101,9 @@
 		25066A0420AA6FFE00850D28 /* NHDuanzi */ = {
 			isa = PBXGroup;
 			children = (
+				25066A3720AAB90200850D28 /* Vender */,
+				25066A2B20AA85BA00850D28 /* Tools */,
+				25066A1A20AA805C00850D28 /* Main */,
 				25066A1720AA713C00850D28 /* resource */,
 				25066A0520AA6FFF00850D28 /* AppDelegate.swift */,
 				25066A0720AA6FFF00850D28 /* ViewController.swift */,
@@ -80,6 +121,86 @@
 				25066A1820AA717100850D28 /* memi.gif */,
 			);
 			path = resource;
+			sourceTree = "<group>";
+		};
+		25066A1A20AA805C00850D28 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				25066A1E20AA80A700850D28 /* More */,
+				25066A1D20AA809200850D28 /* New */,
+				25066A1C20AA808200850D28 /* Home */,
+				25066A1B20AA807300850D28 /* Basic */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		25066A1B20AA807300850D28 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				25066A2720AA82AF00850D28 /* NHTabBarController.swift */,
+				25066A2920AA82CA00850D28 /* NHNavigationController.swift */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		25066A1C20AA808200850D28 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				25066A1F20AA810F00850D28 /* NHHotViewController.swift */,
+				25066A4720AAC24200850D28 /* VideoViewController.swift */,
+				25066A3320AAAC7E00850D28 /* JokeViewController.swift */,
+				25066A4920AAC25100850D28 /* PhotoViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		25066A1D20AA809200850D28 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				25066A2120AA826900850D28 /* NHNewViewController.swift */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		25066A1E20AA80A700850D28 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				25066A2320AA827100850D28 /* NHMoreViewController.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		25066A2B20AA85BA00850D28 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				25066A2C20AA85E000850D28 /* Header.swift */,
+				25066A3020AA8E3F00850D28 /* ServiceApi.swift */,
+				25066A2E20AA8D3100850D28 /* UIColorExtension.swift */,
+				25066A4B20AADDBC00850D28 /* ServiceManager.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		25066A3720AAB90200850D28 /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				25066A3820AAB90D00850D28 /* PageMenu */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		25066A3820AAB90D00850D28 /* PageMenu */ = {
+			isa = PBXGroup;
+			children = (
+				25066A3C20AAB92000850D28 /* CAPSPageMenu.swift */,
+				25066A3B20AAB92000850D28 /* CAPSPageMenu+Options.swift */,
+				25066A3E20AAB92000850D28 /* CAPSPageMenu+UIConfiguration.swift */,
+				25066A3D20AAB92000850D28 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */,
+				25066A3920AAB91F00850D28 /* CAPSPageMenu+UIScrollViewDelegate.swift */,
+				25066A3F20AAB92000850D28 /* CAPSPageMenuConfiguration.swift */,
+				25066A3A20AAB92000850D28 /* MenuItemView.swift */,
+			);
+			path = PageMenu;
 			sourceTree = "<group>";
 		};
 		48CA0560C95836BE5D3585B6 /* Pods */ = {
@@ -232,8 +353,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25066A2D20AA85E000850D28 /* Header.swift in Sources */,
+				25066A4520AAB92000850D28 /* CAPSPageMenu+UIConfiguration.swift in Sources */,
+				25066A4620AAB92000850D28 /* CAPSPageMenuConfiguration.swift in Sources */,
+				25066A4020AAB92000850D28 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */,
+				25066A4220AAB92000850D28 /* CAPSPageMenu+Options.swift in Sources */,
+				25066A4C20AADDBC00850D28 /* ServiceManager.swift in Sources */,
+				25066A4820AAC24200850D28 /* VideoViewController.swift in Sources */,
+				25066A2420AA827100850D28 /* NHMoreViewController.swift in Sources */,
+				25066A2820AA82AF00850D28 /* NHTabBarController.swift in Sources */,
+				25066A4120AAB92000850D28 /* MenuItemView.swift in Sources */,
+				25066A4A20AAC25100850D28 /* PhotoViewController.swift in Sources */,
+				25066A4320AAB92000850D28 /* CAPSPageMenu.swift in Sources */,
+				25066A4420AAB92000850D28 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */,
+				25066A2020AA810F00850D28 /* NHHotViewController.swift in Sources */,
+				25066A3120AA8E3F00850D28 /* ServiceApi.swift in Sources */,
+				25066A2A20AA82CA00850D28 /* NHNavigationController.swift in Sources */,
+				25066A2F20AA8D3100850D28 /* UIColorExtension.swift in Sources */,
 				25066A0820AA6FFF00850D28 /* ViewController.swift in Sources */,
+				25066A3420AAAC7E00850D28 /* JokeViewController.swift in Sources */,
 				25066A0620AA6FFF00850D28 /* AppDelegate.swift in Sources */,
+				25066A2220AA826900850D28 /* NHNewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +521,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NHDuanzi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zkkeji.www.NHDuanzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -397,7 +540,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NHDuanzi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zkkeji.www.NHDuanzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
