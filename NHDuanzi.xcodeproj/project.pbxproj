@@ -31,10 +31,9 @@
 		25066A4620AAB92000850D28 /* CAPSPageMenuConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A3F20AAB92000850D28 /* CAPSPageMenuConfiguration.swift */; };
 		25066A4820AAC24200850D28 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A4720AAC24200850D28 /* VideoViewController.swift */; };
 		25066A4A20AAC25100850D28 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A4920AAC25100850D28 /* PhotoViewController.swift */; };
-		25066A4C20AADDBC00850D28 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A4B20AADDBC00850D28 /* ServiceManager.swift */; };
-		42D0F649C4773ADF5276A07D /* Pods_NHDuanzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5105A76D533E15F445D8F4D /* Pods_NHDuanzi.framework */; };
 		7BB5629520AB03F800E17CD0 /* NetworkServiceTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB5629420AB03F800E17CD0 /* NetworkServiceTool.swift */; };
 		7BB5629720AB16D500E17CD0 /* JingxuanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB5629620AB16D500E17CD0 /* JingxuanModel.swift */; };
+		FF9D9957D5B7FA000BD27A07 /* Pods_NHDuanzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FE9C41D79A1616422BB2B6 /* Pods_NHDuanzi.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +45,6 @@
 		25066A0F20AA700000850D28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25066A1120AA700000850D28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25066A1820AA717100850D28 /* memi.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = memi.gif; sourceTree = "<group>"; };
-
 		25066A1F20AA810F00850D28 /* NHHotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHHotViewController.swift; sourceTree = "<group>"; };
 		25066A2120AA826900850D28 /* NHNewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHNewViewController.swift; sourceTree = "<group>"; };
 		25066A2320AA827100850D28 /* NHMoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NHMoreViewController.swift; sourceTree = "<group>"; };
@@ -65,13 +63,11 @@
 		25066A3F20AAB92000850D28 /* CAPSPageMenuConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenuConfiguration.swift; sourceTree = "<group>"; };
 		25066A4720AAC24200850D28 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		25066A4920AAC25100850D28 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
-		25066A4B20AADDBC00850D28 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
-
 		7BB5629420AB03F800E17CD0 /* NetworkServiceTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTool.swift; sourceTree = "<group>"; };
 		7BB5629620AB16D500E17CD0 /* JingxuanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JingxuanModel.swift; sourceTree = "<group>"; };
-		A2F49AAB846ACE61626229D2 /* Pods-NHDuanzi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHDuanzi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NHDuanzi/Pods-NHDuanzi.debug.xcconfig"; sourceTree = "<group>"; };
-		B5105A76D533E15F445D8F4D /* Pods_NHDuanzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHDuanzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F199444509187DFFA071C913 /* Pods-NHDuanzi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHDuanzi.release.xcconfig"; path = "Pods/Target Support Files/Pods-NHDuanzi/Pods-NHDuanzi.release.xcconfig"; sourceTree = "<group>"; };
+		87FE9C41D79A1616422BB2B6 /* Pods_NHDuanzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHDuanzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2CA82E83C4B66BAA7601BE3 /* Pods-NHDuanzi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHDuanzi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NHDuanzi/Pods-NHDuanzi.debug.xcconfig"; sourceTree = "<group>"; };
+		BC0CE47FA75AFC65A2F87D02 /* Pods-NHDuanzi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NHDuanzi.release.xcconfig"; path = "Pods/Target Support Files/Pods-NHDuanzi/Pods-NHDuanzi.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42D0F649C4773ADF5276A07D /* Pods_NHDuanzi.framework in Frameworks */,
+				FF9D9957D5B7FA000BD27A07 /* Pods_NHDuanzi.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +87,8 @@
 			children = (
 				25066A0420AA6FFE00850D28 /* NHDuanzi */,
 				25066A0320AA6FFE00850D28 /* Products */,
-				48CA0560C95836BE5D3585B6 /* Pods */,
 				6CB889B3AF26C65FC60F509C /* Frameworks */,
+				FEB0420689E6E94C66F5FD17 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +108,7 @@
 				25066A1A20AA805C00850D28 /* Main */,
 				25066A1720AA713C00850D28 /* resource */,
 				25066A0520AA6FFF00850D28 /* AppDelegate.swift */,
-				7BB5629420AB03F800E17CD0 /* NetworkServiceTool.swift */,
 				25066A0720AA6FFF00850D28 /* ViewController.swift */,
-				7BB5629620AB16D500E17CD0 /* JingxuanModel.swift */,
 				25066A0920AA6FFF00850D28 /* Main.storyboard */,
 				25066A0C20AA700000850D28 /* Assets.xcassets */,
 				25066A0E20AA700000850D28 /* LaunchScreen.storyboard */,
@@ -154,6 +148,7 @@
 		25066A1C20AA808200850D28 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7BB5629620AB16D500E17CD0 /* JingxuanModel.swift */,
 				25066A1F20AA810F00850D28 /* NHHotViewController.swift */,
 				25066A4720AAC24200850D28 /* VideoViewController.swift */,
 				25066A3320AAAC7E00850D28 /* JokeViewController.swift */,
@@ -184,7 +179,7 @@
 				25066A2C20AA85E000850D28 /* Header.swift */,
 				25066A3020AA8E3F00850D28 /* ServiceApi.swift */,
 				25066A2E20AA8D3100850D28 /* UIColorExtension.swift */,
-				25066A4B20AADDBC00850D28 /* ServiceManager.swift */,
+				7BB5629420AB03F800E17CD0 /* NetworkServiceTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -211,21 +206,21 @@
 			path = PageMenu;
 			sourceTree = "<group>";
 		};
-		48CA0560C95836BE5D3585B6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A2F49AAB846ACE61626229D2 /* Pods-NHDuanzi.debug.xcconfig */,
-				F199444509187DFFA071C913 /* Pods-NHDuanzi.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		6CB889B3AF26C65FC60F509C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B5105A76D533E15F445D8F4D /* Pods_NHDuanzi.framework */,
+				87FE9C41D79A1616422BB2B6 /* Pods_NHDuanzi.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEB0420689E6E94C66F5FD17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2CA82E83C4B66BAA7601BE3 /* Pods-NHDuanzi.debug.xcconfig */,
+				BC0CE47FA75AFC65A2F87D02 /* Pods-NHDuanzi.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,11 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25066A1420AA700000850D28 /* Build configuration list for PBXNativeTarget "NHDuanzi" */;
 			buildPhases = (
-				61C2F2AFB9DC71C446A7005F /* [CP] Check Pods Manifest.lock */,
+				04093838C9E5C5A028582C9F /* [CP] Check Pods Manifest.lock */,
 				250669FE20AA6FFE00850D28 /* Sources */,
 				250669FF20AA6FFE00850D28 /* Frameworks */,
 				25066A0020AA6FFE00850D28 /* Resources */,
-				6661A6B46D15BB2CAD99833B /* [CP] Embed Pods Frameworks */,
+				811B73E7E11AAD274F2EFAC9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,7 +293,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		61C2F2AFB9DC71C446A7005F /* [CP] Check Pods Manifest.lock */ = {
+		04093838C9E5C5A028582C9F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -316,7 +311,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6661A6B46D15BB2CAD99833B /* [CP] Embed Pods Frameworks */ = {
+		811B73E7E11AAD274F2EFAC9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -325,12 +320,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-NHDuanzi/Pods-NHDuanzi-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +347,6 @@
 				25066A4620AAB92000850D28 /* CAPSPageMenuConfiguration.swift in Sources */,
 				25066A4020AAB92000850D28 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */,
 				25066A4220AAB92000850D28 /* CAPSPageMenu+Options.swift in Sources */,
-				25066A4C20AADDBC00850D28 /* ServiceManager.swift in Sources */,
 				25066A4820AAC24200850D28 /* VideoViewController.swift in Sources */,
 				25066A2420AA827100850D28 /* NHMoreViewController.swift in Sources */,
 				25066A2820AA82AF00850D28 /* NHTabBarController.swift in Sources */,
@@ -509,7 +505,7 @@
 		};
 		25066A1520AA700000850D28 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2F49AAB846ACE61626229D2 /* Pods-NHDuanzi.debug.xcconfig */;
+			baseConfigurationReference = B2CA82E83C4B66BAA7601BE3 /* Pods-NHDuanzi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,7 +524,7 @@
 		};
 		25066A1620AA700000850D28 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F199444509187DFFA071C913 /* Pods-NHDuanzi.release.xcconfig */;
+			baseConfigurationReference = BC0CE47FA75AFC65A2F87D02 /* Pods-NHDuanzi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
