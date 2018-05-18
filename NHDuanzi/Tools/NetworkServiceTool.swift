@@ -8,7 +8,6 @@
 
 import UIKit
 import Alamofire
-
 enum RequestMethod :Int {
     case GET = 1
     case POST = 2

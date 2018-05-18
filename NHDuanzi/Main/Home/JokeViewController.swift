@@ -9,8 +9,10 @@
 import UIKit
 
 class JokeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-
-    private let identifier = "JokeCell"
+    private static let identifier = "JokeViewCell"
+    
+    private var nextPage:Int = 0 //下一页
+    private var dataArray : [List] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,34 +20,82 @@ class JokeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         addViews()
         
         loadConstraints();
+        
+        loadData()
     }
     //MARK: - loadView
     private func addViews() {
         self.view.addSubview(self.tableview)
         
+        self.tableview.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
+            self.nextPage = 0
+            
+            self.loadData()
+        });
+        self.tableview.mj_footer = MJRefreshBackNormalFooter.init(refreshingBlock: {
+            self.loadData()
+        });
     }
-    
+    private func endRefresh() {
+        self.tableview.mj_header.endRefreshing()
+        self.tableview.mj_footer.endRefreshing()
+    }
+    private func loadData(){
+        let full_url = BASIC_URL + jingxuan + "\(self.nextPage)-20.json"
+        
+        NetworkServiceTool.share.requestData(full_url, methodType: .GET, success: { [weak self](response) in
+            
+            self?.endRefresh()
+            let jingdianModel:JingxuanModel = JingxuanModel(fromDictionary: response as! NSDictionary)
+            if self?.nextPage == 0 {
+                self?.dataArray.removeAll()
+                self?.dataArray = jingdianModel.list
+            }else {
+                if jingdianModel.list.count > 0{
+                    self?.dataArray.append(contentsOf: jingdianModel.list)
+                }
+            }
+            self?.nextPage = jingdianModel.info.np
+            
+            self?.tableview.reloadData()
+        }) { (error) in
+            self.endRefresh()
+        }
+    }
     //MARK: - Lazy Method
     private lazy var tableview :UITableView = {
        let tableview = UITableView(frame: CGRect.zero, style: UITableViewStyle.plain)
         tableview.delegate = self;
         tableview.dataSource = self;
         tableview.backgroundColor = UIColor.red
-        tableview.rowHeight = 50
-        tableview.register(UITableViewCell.self, forCellReuseIdentifier: identifier)
+        tableview.estimatedRowHeight = 50
+        tableview.rowHeight = UITableViewAutomaticDimension
+        tableview.register(JokeViewCell.self, forCellReuseIdentifier: JokeViewController.identifier)
         return tableview
     }();
     
     //MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.dataArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableview.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as UITableViewCell
+        let cell = tableview.dequeueReusableCell(withIdentifier: JokeViewController.identifier, for: indexPath) as! JokeViewCell
         
+        let model = self.dataArray[indexPath.row] as List
+        // 赋值
+        cell.userImgView.af_setImage(withURL: NSURL(string: (model.u?.header![0])!)! as URL)
+        cell.nickLabel.text = model.u?.name
+        cell.timeLabel.text = model.passtime
+        cell.contentLabel.text = model.text
+    
         return cell
         
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let commentVC = CommentDetailViewController()
+        commentVC.jokeId = self.dataArray[indexPath.row].up
+        self.navigationController?.pushViewController(commentVC, animated: true)
     }
     
     

@@ -8,6 +8,9 @@
 
 import UIKit
 import SnapKit
+import Alamofire
+import AlamofireImage
+import MJRefresh
 
 //MARK: --------------------常量--------------------
 

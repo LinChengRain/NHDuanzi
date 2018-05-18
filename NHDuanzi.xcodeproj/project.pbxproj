@@ -31,6 +31,8 @@
 		25066A4620AAB92000850D28 /* CAPSPageMenuConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A3F20AAB92000850D28 /* CAPSPageMenuConfiguration.swift */; };
 		25066A4820AAC24200850D28 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A4720AAC24200850D28 /* VideoViewController.swift */; };
 		25066A4A20AAC25100850D28 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25066A4920AAC25100850D28 /* PhotoViewController.swift */; };
+		7B6A7D5A20AF217800AE48CE /* JokeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A7D5920AF217800AE48CE /* JokeViewCell.swift */; };
+		7B6A7D5C20AF2EFA00AE48CE /* CommentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6A7D5B20AF2EFA00AE48CE /* CommentDetailViewController.swift */; };
 		7BB5629520AB03F800E17CD0 /* NetworkServiceTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB5629420AB03F800E17CD0 /* NetworkServiceTool.swift */; };
 		7BB5629720AB16D500E17CD0 /* JingxuanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB5629620AB16D500E17CD0 /* JingxuanModel.swift */; };
 		FF9D9957D5B7FA000BD27A07 /* Pods_NHDuanzi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87FE9C41D79A1616422BB2B6 /* Pods_NHDuanzi.framework */; };
@@ -63,6 +65,9 @@
 		25066A3F20AAB92000850D28 /* CAPSPageMenuConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAPSPageMenuConfiguration.swift; sourceTree = "<group>"; };
 		25066A4720AAC24200850D28 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		25066A4920AAC25100850D28 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		7B6A7D5520AF183900AE48CE /* NHDuanzi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NHDuanzi-Bridging-Header.h"; sourceTree = "<group>"; };
+		7B6A7D5920AF217800AE48CE /* JokeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewCell.swift; sourceTree = "<group>"; };
+		7B6A7D5B20AF2EFA00AE48CE /* CommentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDetailViewController.swift; sourceTree = "<group>"; };
 		7BB5629420AB03F800E17CD0 /* NetworkServiceTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTool.swift; sourceTree = "<group>"; };
 		7BB5629620AB16D500E17CD0 /* JingxuanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JingxuanModel.swift; sourceTree = "<group>"; };
 		87FE9C41D79A1616422BB2B6 /* Pods_NHDuanzi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NHDuanzi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +94,7 @@
 				25066A0320AA6FFE00850D28 /* Products */,
 				6CB889B3AF26C65FC60F509C /* Frameworks */,
 				FEB0420689E6E94C66F5FD17 /* Pods */,
+				7B6A7D5520AF183900AE48CE /* NHDuanzi-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,9 +155,11 @@
 			isa = PBXGroup;
 			children = (
 				7BB5629620AB16D500E17CD0 /* JingxuanModel.swift */,
+				7B6A7D5920AF217800AE48CE /* JokeViewCell.swift */,
 				25066A1F20AA810F00850D28 /* NHHotViewController.swift */,
 				25066A4720AAC24200850D28 /* VideoViewController.swift */,
 				25066A3320AAAC7E00850D28 /* JokeViewController.swift */,
+				7B6A7D5B20AF2EFA00AE48CE /* CommentDetailViewController.swift */,
 				25066A4920AAC25100850D28 /* PhotoViewController.swift */,
 			);
 			path = Home;
@@ -257,6 +265,7 @@
 				TargetAttributes = {
 					25066A0120AA6FFE00850D28 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -342,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6A7D5A20AF217800AE48CE /* JokeViewCell.swift in Sources */,
 				25066A2D20AA85E000850D28 /* Header.swift in Sources */,
 				25066A4520AAB92000850D28 /* CAPSPageMenu+UIConfiguration.swift in Sources */,
 				25066A4620AAB92000850D28 /* CAPSPageMenuConfiguration.swift in Sources */,
@@ -360,6 +370,7 @@
 				25066A2F20AA8D3100850D28 /* UIColorExtension.swift in Sources */,
 				7BB5629520AB03F800E17CD0 /* NetworkServiceTool.swift in Sources */,
 				25066A0820AA6FFF00850D28 /* ViewController.swift in Sources */,
+				7B6A7D5C20AF2EFA00AE48CE /* CommentDetailViewController.swift in Sources */,
 				25066A3420AAAC7E00850D28 /* JokeViewController.swift in Sources */,
 				25066A0620AA6FFF00850D28 /* AppDelegate.swift in Sources */,
 				25066A2220AA826900850D28 /* NHNewViewController.swift in Sources */,
@@ -508,6 +519,7 @@
 			baseConfigurationReference = B2CA82E83C4B66BAA7601BE3 /* Pods-NHDuanzi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NHDuanzi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -517,6 +529,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zkkeji.www.NHDuanzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NHDuanzi-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -527,6 +541,7 @@
 			baseConfigurationReference = BC0CE47FA75AFC65A2F87D02 /* Pods-NHDuanzi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NHDuanzi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -536,6 +551,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zkkeji.www.NHDuanzi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NHDuanzi-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
