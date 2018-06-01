@@ -50,6 +50,9 @@ struct List{
     var type : String?
     var u : U?
     var up : String?
+    var video : Video?
+    var gif : Gif?
+    var image : Image?
     
     
     /**
@@ -87,6 +90,18 @@ struct List{
             u = U(fromDictionary: uData)
         }
         up = dictionary["up"] as? String
+        
+        if let videoData = dictionary["video"] as? NSDictionary{
+            video = Video(fromDictionary:videoData )
+        }
+        
+        if let gifData = dictionary["gif"] as? [String:Any]{
+            gif = Gif(fromDictionary: gifData)
+        }
+        id = dictionary["id"] as? String
+        if let imageData = dictionary["image"] as? [String:Any]{
+            image = Image(fromDictionary: imageData)
+        }
     }
 }
 
@@ -104,7 +119,7 @@ struct TopComment{
     var u : U?
     var voicetime : Int?
     var voiceuri : String?
-    
+    var audio : Audio?
     
     /**
      * 用字典来初始化一个实例并设置各个属性值
@@ -203,4 +218,95 @@ struct U{
         uid = dictionary["uid"] as? String
         isV = dictionary["is_v"] as? Bool
     }
+}
+struct Video{
+    
+    var download : [String]?
+    var duration : Int?
+    var height : Float?
+    var playcount : Int?
+    var playfcount : Int?
+    var thumbnail : [String]?
+    var thumbnail_small : [String]?
+    var video : [String]?
+    var width : Float?
+    
+    
+    /**
+     * 用字典来初始化一个实例并设置各个属性值
+     */
+    init(fromDictionary dictionary: NSDictionary){
+        download = dictionary["download"] as? [String]
+        duration = dictionary["duration"] as? Int
+        height = dictionary["height"] as? Float
+        playfcount = dictionary["playfcount"] as? Int
+        playcount = dictionary["playcount"] as? Int
+        thumbnail = dictionary["thumbnail"] as? [String]
+        thumbnail_small = dictionary["thumbnail_small"] as? [String]
+        video = dictionary["video"] as? [String]
+        width = dictionary["width"] as? Float
+    }
+}
+
+
+struct Audio{
+    
+    var audio : [String]?
+    var duration : Int?
+    
+    /**
+     * 用字典来初始化一个实例并设置各个属性值
+     */
+    init(fromDictionary dictionary: [String:Any]){
+        audio = dictionary["audio"] as? [String]
+        duration = dictionary["duration"] as? Int
+    }
+}
+
+
+struct Image{
+    
+    var big : [String]?
+    var downloadUrl : [String]?
+    var height : Int?
+    var medium : [AnyObject]?
+    var small : [AnyObject]?
+    var thumbnailSmall : [String]?
+    var width : Int?
+    
+    
+    /**
+     * Instantiate the instance using the passed dictionary values to set the properties values
+     */
+    init(fromDictionary dictionary: [String:Any]){
+        big = dictionary["big"] as? [String]
+        downloadUrl = dictionary["download_url"] as? [String]
+        height = dictionary["height"] as? Int
+        medium = dictionary["medium"] as? [AnyObject]
+        small = dictionary["small"] as? [AnyObject]
+        thumbnailSmall = dictionary["thumbnail_small"] as? [String]
+        width = dictionary["width"] as? Int
+    }
+}
+
+struct Gif{
+    
+    var downloadUrl : [String]!
+    var gifThumbnail : [String]!
+    var height : Int!
+    var images : [String]!
+    var width : Int!
+    
+    
+    /**
+     * Instantiate the instance using the passed dictionary values to set the properties values
+     */
+    init(fromDictionary dictionary: [String:Any]){
+        downloadUrl = dictionary["download_url"] as? [String]
+        gifThumbnail = dictionary["gif_thumbnail"] as? [String]
+        height = dictionary["height"] as? Int
+        images = dictionary["images"] as? [String]
+        width = dictionary["width"] as? Int
+    }
+    
 }

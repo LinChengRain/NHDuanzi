@@ -7,34 +7,47 @@
 //
 
 import UIKit
-
+import SnapKit
 class JokeViewCell: UITableViewCell {
     
+    var newModel:List!
+    var lineView:UIView!
+    var bigView:UIView!
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         addViews()
     }
     private func addViews() {
-        self.contentView.addSubview(self.userImgView)
-        self.contentView.addSubview(self.nickLabel)
-        self.contentView.addSubview(self.timeLabel)
-        self.contentView.addSubview(self.contentLabel)
-        self.contentView.addSubview(self.zanLabel)
-        self.contentView.addSubview(self.chaLabel)
-        self.contentView.addSubview(self.commentLabel)
-
+        let bgView = UIView()
+        self.bigView = bgView
+        bgView.backgroundColor = UIColor.red
+        self.contentView.addSubview(bgView)
+        bgView.addSubview(self.userImgView)
+        bgView.addSubview(self.nickLabel)
+        bgView.addSubview(self.timeLabel)
+        bgView.addSubview(self.contentLabel)
+        bgView.addSubview(self.zanLabel)
+        bgView.addSubview(self.chaLabel)
+        bgView.addSubview(self.commentLabel)
+        bgView.addSubview(self.centerImgVIew)
+        
         let lineView1 :UIView = UIView(frame: CGRect.zero)
         lineView1.backgroundColor = UIColor.lightGray
-        
+        self.lineView = lineView1
+
         let lineView2 :UIView = UIView(frame: CGRect.zero)
         lineView2.backgroundColor = UIColor.lightGray
         self.contentView.addSubview(lineView1)
         self.contentView.addSubview(lineView2)
 
+        bgView.snp.makeConstraints { (make) -> Void in
+            make.edges.equalTo(self.contentView).inset(UIEdgeInsetsMake(0, 0, 0, 0))  // 第2步：设置uItemBox与“Cell的contentView”边缘对齐，可以有空隙，没必要一定是(0, 0, 0, 0)
+        }
+        
         self.userImgView.snp.makeConstraints { (make) in
-            make.left.equalToSuperview().offset(20)
-            make.top.equalToSuperview().offset(20)
+            make.left.equalTo(bgView).offset(20)
+            make.top.equalTo(bgView).offset(20)
             make.width.height.equalTo(50)
         }
         self.nickLabel.snp.makeConstraints { (make) in
@@ -43,14 +56,29 @@ class JokeViewCell: UITableViewCell {
         }
         
         self.timeLabel.snp.makeConstraints { (make) in
-            make.right.equalToSuperview().offset(-25)
+            make.right.equalTo(bgView).offset(-25)
             make.centerY.equalTo(self.userImgView)
+        }
+        
+        // 需要自适应高度
+        self.contentLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(self.userImgView.snp.bottom).offset(10)
+            make.left.equalTo(self.userImgView)
+            make.right.equalTo(bgView).offset(-30)
+        }
+        self.centerImgVIew.snp.makeConstraints { (make) in
+            make.top.equalTo(self.contentLabel.snp.bottom).offset(10)
+            make.left.equalTo(self.contentLabel)
+            make.right.equalTo(self.contentLabel)
+            //给一个默认的高度值
+            make.height.equalTo(0)
+            make.bottom.equalTo(lineView1.snp.top).offset(-10)
         }
         
         lineView2.snp.makeConstraints { (make) in
             make.left.equalToSuperview()
             make.right.equalToSuperview()
-            make.bottom.equalToSuperview()
+            make.bottom.equalTo(bgView).offset(-10)
             make.height.equalTo(1)
         }
         
@@ -60,12 +88,44 @@ class JokeViewCell: UITableViewCell {
             make.bottom.equalTo(lineView2).offset(-35)
             make.height.equalTo(1)
         }
-        // 需要自适应高度
-        self.contentLabel.snp.makeConstraints { (make) in
-            make.top.equalTo(self.userImgView.snp.bottom).offset(10)
-            make.left.equalTo(self.userImgView)
-            make.right.equalToSuperview().offset(-30)
-            make.bottom.equalTo(lineView1).offset(-20)
+    }
+    
+    var model:List {
+        set {
+            self.newModel = newValue
+            // 赋值
+            self.userImgView.af_setImage(withURL: NSURL(string: (self.newModel.u?.header![0])!)! as URL)
+            self.nickLabel.text = self.newModel.u?.name
+            self.timeLabel.text = self.newModel.passtime
+            self.contentLabel.text = self.newModel.text
+            
+            if newModel.type == "video" {
+                self.centerImgVIew.alpha = 1
+                self.centerImgVIew.af_setImage(withURL: NSURL(string: (self.newModel.video?.thumbnail![0])!)! as URL)
+    
+                self.centerImgVIew.snp.updateConstraints { (make) in
+                    make.height.equalTo(CGFloat((self.newModel.video?.height)!)*((MAIN_SCREEN_WIDTH - 40)/CGFloat((self.newModel.video?.width)!)))
+                }
+            }else if newModel.type == "image"{
+                self.centerImgVIew.alpha = 1
+                self.centerImgVIew.af_setImage(withURL: NSURL(string: (self.newModel.image?.thumbnailSmall![0])!)! as URL)
+                
+                self.centerImgVIew.snp.updateConstraints { (make) in
+                    make.height.equalTo(200)
+                }
+            }else if newModel.type == "gif"{
+                self.centerImgVIew.alpha = 1
+                self.centerImgVIew.af_setImage(withURL: NSURL(string: (self.newModel.gif?.gifThumbnail![0])!)! as URL)
+                
+                self.centerImgVIew.snp.updateConstraints { (make) in
+                    make.height.equalTo(200)
+                }
+            }else{
+                 self.centerImgVIew.alpha = 0
+            }
+        }
+        get {
+            return self.newModel
         }
     }
     required init?(coder aDecoder: NSCoder) {
@@ -130,8 +190,15 @@ class JokeViewCell: UITableViewCell {
     
     /// 评论
     private lazy var commentLabel:UILabel = {
-    let comment = UILabel(frame: CGRect.zero)
-    comment.text = "1000"
-    return comment
+        let comment = UILabel(frame: CGRect.zero)
+        comment.text = "1000"
+        return comment
+    }()
+    
+    /// 图片或视频
+    private lazy var centerImgVIew:UIImageView = {
+        let imageview = UIImageView(frame: CGRect.zero)
+        imageview.alpha = 0
+        return imageview
     }()
 }

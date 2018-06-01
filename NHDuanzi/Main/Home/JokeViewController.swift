@@ -11,6 +11,8 @@ import UIKit
 class JokeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     private static let identifier = "JokeViewCell"
     
+    var current_path :String!
+    
     private var nextPage:Int = 0 //下一页
     private var dataArray : [List] = []
     override func viewDidLoad() {
@@ -41,7 +43,7 @@ class JokeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         self.tableview.mj_footer.endRefreshing()
     }
     private func loadData(){
-        let full_url = BASIC_URL + jingxuan + "\(self.nextPage)-20.json"
+        let full_url = BASIC_URL + current_path + "\(self.nextPage)-20.json"
         
         NetworkServiceTool.share.requestData(full_url, methodType: .GET, success: { [weak self](response) in
             
@@ -55,7 +57,10 @@ class JokeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                     self?.dataArray.append(contentsOf: jingdianModel.list)
                 }
             }
-            self?.nextPage = jingdianModel.info.np
+            guard let np = jingdianModel.info.np else {
+                return
+            }
+            self?.nextPage = np
             
             self?.tableview.reloadData()
         }) { (error) in
@@ -94,7 +99,8 @@ class JokeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let commentVC = CommentDetailViewController()
-        commentVC.jokeId = self.dataArray[indexPath.row].up
+        commentVC.jokeId = self.dataArray[indexPath.row].id
+        commentVC.currentpage = self.nextPage
         self.navigationController?.pushViewController(commentVC, animated: true)
     }
     

@@ -43,7 +43,7 @@ class NHTabBarController: UITabBarController {
         controller.tabBarItem.selectedImage = selectImage?.withRenderingMode(.alwaysOriginal)
         tabBar.tintColor = RGBColor(71,61,72,1)
         // 3.添加到导航控制器
-        let navigationVC = NHNavigationController(rootViewController: controller)
+        let navigationVC:NHNavigationController = NHNavigationController(rootViewController: controller)
         addChildViewController(navigationVC)
         
     }

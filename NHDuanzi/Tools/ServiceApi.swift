@@ -11,7 +11,23 @@ import UIKit
 
 //MARK : - 接口
 let BASIC_URL = "http://s.budejie.com"
+    
+/**
+ 最热
+ */
+ let hot_path = "/topic/list/jingxuan"
+/**
+ 最新
+ */
+let new_path = "/topic/list/zuixin"
+
 //段子
-let jingxuan = "/topic/list/jingxuan/29/meinv-iphone-1.3/"
-let comment_list = "/topic/comment_list/25810020/0/meinv-iphone-1.3/0-20.json"
+let joke_url = "/29/meinv-iphone-1.4/"
+//电影
+let movie_url = "/41/meinv-iphone-1.4/"
+
+//图片
+let photo_url = "/10/meinv-iphone-1.4/"
+
+
 

@@ -34,10 +34,13 @@ class NHHotViewController: UIViewController {
     //子视图
     func addViews() {
         let videoVC = VideoViewController()
+        videoVC.current_path = hot_path + movie_url
         videoVC.title = "视频"
         let photoVC = PhotoViewController()
+        photoVC.current_path = hot_path + photo_url
         photoVC.title = "图片"
         let jokeVC = JokeViewController()
+        jokeVC.current_path = hot_path + joke_url
         jokeVC.title = "段子"
         controllerArray.append(videoVC)
         controllerArray.append(photoVC)

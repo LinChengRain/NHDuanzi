@@ -11,11 +11,15 @@ import UIKit
 class CommentDetailViewController: UIViewController {
 
     var jokeId:String!
+    var currentpage:Int = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+//        let comment_url = BASIC_URL + comment_list + "\(self.jokeId)/0/meinv-iphone-1.3/\(self.currentpage)-20.json"
     }
 
     override func didReceiveMemoryWarning() {
